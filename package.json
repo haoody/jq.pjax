@@ -19,5 +19,9 @@
     "gulp-clean": "^0.4.0",
     "gulp-uglify": "^3.0.2",
     "pump": "^3.0.0"
+  },
+  "dependencies": {
+    "bower-nexus3-resolver": "^1.0.4",
+    "global": "^4.3.2"
   }
 }

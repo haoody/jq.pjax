@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.zx.webjars</groupId>
+  <artifactId>jquery.pjax</artifactId>
+  <packaging>jar</packaging>
+  <version>2.0.2</version>
+  <name>jquery.pjax</name>
+  <description>Szzx develop framework for product</description>
+  <url>https://product.zxxxjs.com</url>
+  <organization>
+    <name>Shenzhen Zhuoxun Information Technology Co., Ltd.</name>
+    <url>https://www.zxxxjs.com</url>
+  </organization>
+  <licenses>
+    <license>
+      <name>The Szzx License, Version 6.0</name>
+      <url>https://www.zxxxjs.com/licenses/LICENSE-6.0</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>lai</id>
+      <name>lxj</name>
+      <email>lxj@zxxxjs.com</email>
+      <organization>Shenzhen Zhuoxun Information Technology Co., Ltd.</organization>
+      <organizationUrl>https://www.zxxxjs.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>http://git.zx/product/zx-component/jquery-pjax.git</connection>
+    <developerConnection>http://git.zx/product/zx-component/jquery-pjax.git</developerConnection>
+    <url>http://git.zx/product/zx-component/jquery-pjax.git</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
