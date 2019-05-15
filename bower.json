@@ -1,0 +1,20 @@
+{
+  "name": "jquery-pjax",
+  "authors": [
+    "Lxj <lai8206@126.com>"
+  ],
+  "description": "Base on pjax to load html by jquery",
+  "main": "jquery.pjax.js",
+  "keywords": [
+    "lxj"
+  ],
+  "license": "MIT",
+  "homepage": "http://git.zx/product/zx-component/jquery-pjax.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
