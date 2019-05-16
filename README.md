@@ -2,5 +2,5 @@
 
 ```bash
 yarn add global bower-nexus3-resolver
-bower register jquery.pjax http://git.zx/product/zx-component/jquery-pjax.git
+bower register jquery.pjax https://github.com/lai8206/jq_pjax.git
 ```

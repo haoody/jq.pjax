@@ -1,5 +1,6 @@
 {
   "name": "jquery-pjax",
+  "version": "2.0.2",
   "authors": [
     "Lxj <lai8206@126.com>"
   ],
@@ -9,7 +10,7 @@
     "lxj"
   ],
   "license": "MIT",
-  "homepage": "http://git.zx/product/zx-component/jquery-pjax.git",
+  "homepage": "https://github.com/lai8206/jq_pjax.git",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -1,11 +1,15 @@
 {
     "registry": {
         "search": [
-            "http://rep.zx/repository/bower-public"
+            "http://rep.zx/repository/bower-public/"
         ],
-        "register": "http://rep.zx/repository/bower-internal"
+        "register": "http://lxj:zxlxj2016110817@rep.zx/repository/bower-internal/"
     },
     "resolvers": [
         "bower-nexus3-resolver"
-    ]
+    ],
+    "nexus": {
+        "username": "lxj",
+        "password": "zxlxj2016110817"
+    }
 }
