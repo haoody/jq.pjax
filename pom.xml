@@ -4,7 +4,7 @@
   <artifactId>jq.pjax</artifactId>
   <packaging>jar</packaging>
   <version>2.0.2</version>
-  <name>jquery.pjax</name>
+  <name>jq.pjax</name>
   <description>Szzx develop framework for product</description>
   <url>https://product.zxxxjs.com</url>
   <organization>
@@ -31,12 +31,63 @@
     <developerConnection>http://git.zx/product/zx-component/jq.pjax.git</developerConnection>
     <url>http://git.zx/product/zx-component/jq.pjax.git</url>
   </scm>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <upstream.version>2.0.2</upstream.version>
+    <upstream.url>https://github.com/lai8206/jq.pjax/archive/${upstream.version}.zip</upstream.url>
+    <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
+    <requirejs>
+      {
+        "path": {
+          "jq.pjax": "jq.pjax"
+        }
+      }
+    </requirejs>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.8</version>
+        <executions>
+          <execution>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <target>
+                <echo message="download archive" />
+                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                <echo message="unzip archive" />
+                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                <echo message="moving resources" />
+                <move todir="${destDir}">
+                  <fileset dir="${project.build.directory}/${name}-${upstream.version}" includes="dist/" />
+                </move>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus Release Repository</name>
+            <url>http://rep.zx/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://rep.zx/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <site>
+            <id>nexus</id>
+            <name>Nexus Site Repository</name>
+            <url>http://rep.zx/repository/maven-site/</url>
+        </site>
+    </distributionManagement>
 </project>
