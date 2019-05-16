@@ -17,7 +17,7 @@ gulp.task('clean:dist', function (cb) {
  * 压缩文件
  */
 gulp.task('uglify', async () => {
-    await gulp.src('../jquery.pjax.js')
+    await gulp.src('../src/jq.pjax.js')
         .pipe(uglify())
         .pipe(gulp.dest('../dist'))
 });

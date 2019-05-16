@@ -1,13 +1,13 @@
 {
-  "name": "jquery-pjax",
+  "name": "jq.pjax",
   "version": "2.0.2",
   "description": "Base on pjax to load html by jquery",
-  "main": "jquery.pjax.js",
+  "main": "jq.pjax.js",
   "scripts": {
     "uglify": "gulp uglify --gulpfile build/gulpfile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "http://git.zx/product/zx-component/jquery-pjax.git",
+  "repository": "http://git.zx/product/zx-component/jq.pjax.git",
   "keywords": [
     "lxj"
   ],
@@ -18,9 +18,8 @@
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-uglify": "^3.0.2",
-    "pump": "^3.0.0"
-  },
-  "dependencies": {
+    "pump": "^3.0.0",
+
     "bower-nexus3-resolver": "^1.0.4",
     "global": "^4.3.2"
   }

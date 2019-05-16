@@ -1,6 +1,5 @@
-# bower 打包发布
+# jq_pjax
 
-```bash
-yarn add global bower-nexus3-resolver
-bower register jquery.pjax https://github.com/lai8206/jq_pjax.git
-```
+使用详见[defunkt/jquery-pjax](https://github.com/defunkt/jquery-pjax)
+
+在此基础上，添加后台异常返回的处理
