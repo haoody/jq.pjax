@@ -6,12 +6,9 @@
 
 (function ($) {
 
-// When called on a container with a selector, fetches the href with
-// ajax into the container or with the data-pjax attribute on the link
-// itself.
+// 在带有选择器的容器上调用时，使用ajax将href提取到容器中，或者使用链接本身的data-pjax属性。
 //
-// Tries to make sure the back button and ctrl+click work the way
-// you'd expect.
+// 尝试确保后退按钮和ctrl+click以您期望的方式工作。
 //
 // Exported as $.fn.pjax
 //
